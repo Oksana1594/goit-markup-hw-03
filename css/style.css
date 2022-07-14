@@ -76,6 +76,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.navigation {
+  display: flex;
+}
+
 .logo-black {
   color: #000000;
 }
@@ -84,11 +88,26 @@ body {
   color: var(--contrasting-color);
 }
 
-.site-nav.link {
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  /* display: block; */
+  display: flex;
+
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
 }
+
+/* .site-nave .current  */
 
 .link {
   color: var(--title-text-color);
@@ -102,21 +121,32 @@ body {
 .site-nav.current {
   color: var(--accent-color);
 }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* ===================/Навігація====================== */
 
 /* ===================Контактна інформація=========== */
 
-.contact-info a {
+.contact-info .link-contact {
   color: var(--primary-text-color);
-  /* font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em; */
+  display: flex;
 }
 
-.contact-info a:hover,
-.contact-info a:focus {
+.contact-info .link-contact:hover,
+.contact-info .link-con:focus {
   color: var(--accent-color);
+}
+
+.contact-info {
+  display: flex;
+}
+
+.contact-info .item + .item {
+  margin-left: 50px;
 }
 
 /* ===================/Контактна інформація=========== */
@@ -165,6 +195,11 @@ body {
   background-color: var(--background-dark);
 }
 
+/* .logo.footer,
+.logo-white.footer {
+  margin-bottom: 20px;
+} */
+
 /* =====================/Загальні стилі=============== */
 
 /* =====================Студія======================== */
@@ -172,6 +207,8 @@ body {
 /* ====================Герой=========================== */
 .hero {
   background-color: var(--background-dark);
+  text-align: center;
+  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -179,9 +216,11 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  padding-top: 200px;
+  padding-left: 252px;
+  padding-right: 252px;
 }
 
 /* ====================/Герой=========================== */
@@ -193,6 +232,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .subtitle {
@@ -201,6 +241,27 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.benefits {
+  display: flex;
+}
+
+.benefits .benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.services {
+  display: flex;
+}
+
+.services .services-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.photo {
+  margin-bottom: 30px;
 }
 
 .caption-team {
@@ -209,31 +270,44 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .text {
   line-height: 1.19;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.button.maine {
+.employee {
+  display: flex;
+}
+
+.employee .our-team:not(:last-child) {
+  margin-right: 30px;
+}
+.maine {
+  display: inline-block;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  /* display: inline-block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px; */
+  margin-bottom: 200px;
+  min-width: 200px;
+  margin-top: 30px;
 }
 
-.button.main:hover,
-.button.main:focus {
+.button.maine:hover,
+.button.maine:focus {
   background-color: #188ce8;
+}
+
+.section {
+  margin-bottom: 94px;
 }
 
 /*  ======================/Студія============================ */
@@ -256,6 +330,7 @@ body {
 .button.secondary {
   color: #212121;
   background-color: #f5f4fa;
+  margin-bottom: 34px;
 }
 
 .button.secondary:hover,
@@ -269,17 +344,26 @@ body {
   color: var(--contrasting-color);
 }
 
+.filter {
+  display: flex;
+}
+.filter .filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .card-set {
   display: flex;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   margin-top: -30px;
   margin-left: -30px;
   flex-wrap: wrap;
 }
 
 .card-set > .item {
+  min-width: 270px;
   margin-top: 30px;
   margin-left: 30px;
+  margin-right: 0px;
   flex-basis: calc(100% / 3);
 }
