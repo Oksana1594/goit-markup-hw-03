@@ -20,30 +20,30 @@
     <header>
       <!-- Навігація -->
 
-      <div class="container">
+      <div class="container main-header">
         <nav class="navigation">
           <a href="./index.html" lang="en" class="logo"
             >Web<span class="logo-black">Studio</span></a
           >
           <ul class="site-nav">
-            <li class="item">
+            <li class="item-nav">
               <a href="./index.html" class="site-nav current">Студия</a>
             </li>
-            <li class="item">
+            <li class="item-nav">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="item-nav"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
 
         <!-- Контактна інформація -->
         <ul class="contact-info">
-          <li class="item">
+          <li class="item-contact">
             <a href="mailto:info@devstudio.com" class="link-contact"
               >info@devstudio.com</a
             >
           </li>
-          <li class="item">
+          <li class="item-contact">
             <a href="tel:+380961111111" class="link-contact"
               >+38 096 111 11 11</a
             >
@@ -55,7 +55,7 @@
     <!-- Основний контент -->
     <main>
       <!-- Герой -->
-      <section class="hero">
+      <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button maine">Заказать услугу</button>
@@ -103,7 +103,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="title work">Чем мы занимаемся</h2>
+          <h2 class="title">Чем мы занимаемся</h2>
           <ul class="services">
             <li class="services-item">
               <img
@@ -137,50 +137,65 @@
       <section class="section">
         <div class="container">
           <h2 class="title">Наша команда</h2>
-          <ul class="employee">
-            <li class="our-team">
+          <ul class="employee-list">
+            <li class="employee-card">
               <img
+                class="employee-photo"
                 src="./images/employees/img3.jpg"
                 alt="Фото Игоря Демьяненко"
                 width="270"
                 height="260"
                 class="photo"
               />
-              <h3 class="caption-team">Игорь Демьяненко</h3>
-              <p lang="en" class="text">Product Designer</p>
+              <div class="employees-card-content">
+                <h3 class="caption-team">Игорь Демьяненко</h3>
+                <p lang="en" class="text">Product Designer</p>
+              </div>
             </li>
-            <li class="our-team">
+
+            <li class="employee-card">
               <img
+                class="employee-photo"
                 src="./images/employees/img4.jpg"
                 alt="Фото Ольги Репиной"
                 width="270"
                 height="260"
                 class="photo"
               />
-              <h3 class="caption-team">Ольга Репина</h3>
-              <p lang="en" class="text">Frontend Developer</p>
+              <div class="employees-card-content">
+                <h3 class="caption-team">Ольга Репина</h3>
+                <p lang="en" class="text">Frontend Developer</p>
+              </div>
             </li>
-            <li class="our-team">
+
+            <li class="employee-card">
               <img
+                class="employee-photo"
                 src="./images/employees/img5.jpg"
                 alt="Фото Николая Тарасова"
                 width="270"
                 height="260"
                 class="photo"
               />
-              <h3 class="caption-team">Николай Тарасов</h3>
-              <p lang="en" class="text">Marketing</p>
+              <div class="employees-card-content">
+                <h3 class="caption-team">Николай Тарасов</h3>
+                <p lang="en" class="text">Marketing</p>
+              </div>
             </li>
-            <li class="our-team">
+
+            <li class="employee-card">
               <img
+                class="employee-photo"
                 src="./images/employees/img6.jpg"
                 alt="Фото Михаила Ермакова"
                 width="270"
                 height="260"
                 class="photo"
               />
-              <h3 class="caption-team">Михаил Ермаков</h3>
-              <p lang="en" class="text">UI Designer</p>
+              <div class="employees-card-content">
+                <h3 class="caption-team">Михаил Ермаков</h3>
+                <p lang="en" class="text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -188,15 +203,17 @@
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
+    <footer class="footer basement">
       <div class="container">
         <a href="./index.html" lang="en" class="logo footer">
           Web<span class="logo-white footer">Studio</span></a
         >
         <address>
-          <ul>
-            <li class="address">г. Киев, пр-т Леси Украинки, 26</li>
-            <li>
+          <ul class="end-page">
+            <li class="address footer-entrance">
+              г. Киев, пр-т Леси Украинки, 26
+            </li>
+            <li class="footer-entrance">
               <a href="mailto:info@devstudio.com" class="contact"
                 >info@devstudio.com</a
               >
